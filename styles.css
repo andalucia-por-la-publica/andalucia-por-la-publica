@@ -14,7 +14,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: var(--texto);
   background: linear-gradient(135deg, #f0f9f5 0%, #ffffff 100%);
 }
@@ -68,7 +69,7 @@ section:hover {
 
 h1 {
   margin: 1rem 0 0.5rem;
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 700;
   letter-spacing: -0.5px;
 }
@@ -83,13 +84,13 @@ h1 {
 h2 {
   margin: 0 0 1rem;
   color: var(--verde-oscuro);
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
 h3 {
   color: var(--verde-principal);
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
@@ -97,7 +98,7 @@ h3 {
 
 h4 {
   color: var(--verde-principal);
-  font-size: 1rem;
+  font-size: 1.35rem;
   font-weight: 600;
   margin: 1rem 0 0.5rem;
 }
@@ -107,9 +108,10 @@ ul {
 }
 
 li {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.9rem;
   color: var(--texto-claro);
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 1.15rem;
 }
 
 a {
@@ -128,5 +130,6 @@ a:hover {
 p {
   margin: 0.75rem 0;
   color: var(--texto-claro);
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 1.2rem;
 }
