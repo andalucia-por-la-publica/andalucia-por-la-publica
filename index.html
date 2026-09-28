@@ -9,13 +9,20 @@
   <body>
     <header>
       <img
+        id="logo"
         src="logo.png"
         width="88"
         height="88"
-        onerror="this.style.display='none'; this.nextElementSibling.hidden=false;"
         alt="Logo de la Asamblea Andaluza por la Educación Pública"
       />
-      <p class="logo-fallback" hidden>Logo de la Asamblea Andaluza por la Educación Pública</p>
+      <span
+        id="logo-fallback"
+        class="logo-fallback"
+        role="img"
+        aria-label="Logo de la Asamblea Andaluza por la Educación Pública"
+        hidden
+        >Logo de la Asamblea Andaluza por la Educación Pública</span
+      >
       <h1>Asamblea Andaluza por la Educación Pública</h1>
       <p class="marca">Andalucía por la Pública</p>
     </header>
@@ -61,5 +68,14 @@
         </p>
       </section>
     </main>
+    <script>
+      const logo = document.getElementById("logo");
+      const logoFallback = document.getElementById("logo-fallback");
+
+      logo.addEventListener("error", () => {
+        logo.hidden = true;
+        logoFallback.hidden = false;
+      });
+    </script>
   </body>
 </html>
