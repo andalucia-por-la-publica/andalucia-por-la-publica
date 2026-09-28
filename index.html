@@ -106,7 +106,45 @@
           </tbody>
         </table>
         
-        <p><em>¿No hay asamblea en tu provincia? ¡Ponte en contacto con nosotros a través de nuestros canales de comunicación para organizar una!</em></p>
+
+        <h3>Propón una nueva asamblea</h3>
+        <p>¿Quieres organizar una asamblea en tu zona? Comparte los detalles y nos pondremos en contacto:</p>
+        
+        <form action="https://formspree.io/f/xyzpaqzq" method="POST" style="max-width: 600px; margin: 1.5rem 0; padding: 1.5rem; background: var(--verde-claro); border-radius: 8px;">
+          <div style="margin-bottom: 1rem;">
+            <label for="provincia" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Provincia *</label>
+            <input type="text" id="provincia" name="Provincia" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--verde-principal); border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+          </div>
+          
+          <div style="margin-bottom: 1rem;">
+            <label for="dia" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Día propuesto *</label>
+            <input type="date" id="dia" name="Día" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--verde-principal); border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+          </div>
+          
+          <div style="margin-bottom: 1rem;">
+            <label for="hora" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Hora propuesta *</label>
+            <input type="time" id="hora" name="Hora" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--verde-principal); border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+          </div>
+          
+          <div style="margin-bottom: 1rem;">
+            <label for="localizacion" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Localización / Lugar *</label>
+            <input type="text" id="localizacion" name="Localización" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--verde-principal); border-radius: 4px; box-sizing: border-box; font-family: inherit;" placeholder="Ej: IES Ejemplo, Colegio Público San José...">
+          </div>
+          
+          <hr style="border: none; border-top: 2px solid var(--verde-principal); margin: 1.5rem 0;">
+          
+          <div style="margin-bottom: 1rem;">
+            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Tu email de contacto *</label>
+            <input type="email" id="email" name="Email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--verde-principal); border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+          </div>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <label for="telefono" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Tu teléfono de contacto *</label>
+            <input type="tel" id="telefono" name="Teléfono" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--verde-principal); border-radius: 4px; box-sizing: border-box; font-family: inherit;" placeholder="Ej: 600123456">
+          </div>
+          
+          <button type="submit" style="width: 100%; padding: 0.75rem; background: var(--verde-principal); color: white; border: none; border-radius: 4px; font-size: 1rem; font-weight: bold; cursor: pointer;">Enviar propuesta</button>
+        </form>
 
         <h3>Crea tu primera asamblea</h3>
         <p>¿Quieres impulsar un proceso organizativo en tu centro educativo? No necesitas mucha gente para empezar. Aquí están los pasos clave:</p>
