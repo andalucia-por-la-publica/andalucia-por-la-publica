@@ -85,24 +85,34 @@
         <h3>Próximas Asambleas</h3>
         <p>Estamos organizando asambleas y encuentros en las provincias andaluzas:</p>
         
-        <table style="width: 100%; border-collapse: collapse; margin: 1rem 0; background: white;">
-          <thead>
-            <tr style="background: var(--verde-principal); color: white;">
-              <th style="padding: 1rem; text-align: left; border: 1px solid var(--verde-principal);">Día</th>
-              <th style="padding: 1rem; text-align: left; border: 1px solid var(--verde-principal);">Hora</th>
-              <th style="padding: 1rem; text-align: left; border: 1px solid var(--verde-principal);">Provincia</th>
-              <th style="padding: 1rem; text-align: left; border: 1px solid var(--verde-principal);">Localización</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid var(--verde-claro);">
-              <td style="padding: 1rem; border: 1px solid var(--verde-claro);">01/10/2026</td>
-              <td style="padding: 1rem; border: 1px solid var(--verde-claro);">11:30</td>
-              <td style="padding: 1rem; border: 1px solid var(--verde-claro);">Málaga</td>
-              <td style="padding: 1rem; border: 1px solid var(--verde-claro);">Facultad Educación, aula 0.14</td>
-            </tr>
-          </tbody>
-        </table>
+        <style>
+          @media (max-width: 768px) {
+            .asambleas-table { overflow-x: auto; display: block; }
+            .asambleas-table table { font-size: 14px; }
+            .asambleas-table th, .asambleas-table td { padding: 0.75rem !important; }
+          }
+        </style>
+        
+        <div class="asambleas-table">
+          <table style="width: 100%; border-collapse: collapse; margin: 1rem 0; background: white;">
+            <thead>
+              <tr style="background: var(--verde-principal); color: white;">
+                <th style="padding: 1rem; text-align: left; border: 1px solid var(--verde-principal);">Día</th>
+                <th style="padding: 1rem; text-align: left; border: 1px solid var(--verde-principal);">Hora</th>
+                <th style="padding: 1rem; text-align: left; border: 1px solid var(--verde-principal);">Provincia</th>
+                <th style="padding: 1rem; text-align: left; border: 1px solid var(--verde-principal);">Localización</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--verde-claro);">
+                <td style="padding: 1rem; border: 1px solid var(--verde-claro);">01/10/2026</td>
+                <td style="padding: 1rem; border: 1px solid var(--verde-claro);">11:30</td>
+                <td style="padding: 1rem; border: 1px solid var(--verde-claro);">Málaga</td>
+                <td style="padding: 1rem; border: 1px solid var(--verde-claro);">Facultad Educación, aula 0.14</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         
         <p><em>¿Quieres impulsar una en tu zona? ¡Propón la tuya a través del formulario de abajo!</em></p>
 
