@@ -112,12 +112,22 @@
         <form action="https://formspree.io/f/mjykjvnn" method="POST" style="max-width: 600px; margin: 1.5rem 0; padding: 1.5rem; background: var(--verde-claro); border-radius: 8px;">
           <div style="margin-bottom: 1rem;">
             <label for="provincia" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Provincia *</label>
-            <input type="text" id="provincia" name="Provincia" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--verde-principal); border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+            <select id="provincia" name="Provincia" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--verde-principal); border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+              <option value="">-- Selecciona una provincia --</option>
+              <option value="Almería">Almería</option>
+              <option value="Cádiz">Cádiz</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Granada">Granada</option>
+              <option value="Huelva">Huelva</option>
+              <option value="Jaén">Jaén</option>
+              <option value="Málaga">Málaga</option>
+              <option value="Sevilla">Sevilla</option>
+            </select>
           </div>
           
           <div style="margin-bottom: 1rem;">
-            <label for="dia" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Día propuesto * (dd/mm/yyyy)</label>
-            <input type="text" id="dia" name="Día" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--verde-principal); border-radius: 4px; box-sizing: border-box; font-family: inherit;" placeholder="dd/mm/yyyy">
+            <label for="dia" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Día propuesto *</label>
+            <input type="date" id="dia" name="Día" required lang="es-ES" style="width: 100%; padding: 0.75rem; border: 1px solid var(--verde-principal); border-radius: 4px; box-sizing: border-box; font-family: inherit;">
           </div>
           
           <div style="margin-bottom: 1rem;">
